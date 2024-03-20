@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uber</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -17,7 +18,9 @@
       <nav>
         <div class="container">
           <ul class="menu">
-            <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Home</a>
+            </li>
             <li class="menu_item">
               <a href="#" class="menu_link">With your own car</a>
             </li>
@@ -25,7 +28,7 @@
               <a href="#" class="menu_link">By company car</a>
             </li>
             <li class="menu_item">
-              <a href="#" class="menu_link">Requirements</a>
+              <a href="#require" class="menu_link">Requirements</a>
             </li>
             <li class="menu_item">
               <a href="#" class="menu_link">Contacts</a>
@@ -35,11 +38,16 @@
             </li>
           </ul>
         </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <div class="subheader">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 offset-md-1">
+            <div class="col-6 col-md-3 offset-md-1">
               <a href="#" class="subheader_logo"
                 ><img src="icons/uber.svg" alt="logo" class="subheader_img"
               /></a>
@@ -47,13 +55,16 @@
                 Official partner of Uber in Kyiv
               </div>
             </div>
-            <div class="col-md-2 offset-md-3">
+            <div class="xs-hidden col-md-3 offset-md-2">
               <div class="subheader_call">Call us daily</div>
               <a href="tel:380930060055" class="subheader_phone"
                 >380 (93) 006-00-55</a
               >
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-3">
+              <a href="tel:380930060055" class="xs-visible subheader_phone"
+                >380 (93) 006-00-55</a
+              >
               <button class="subheader_btn">Request a call</button>
             </div>
           </div>
@@ -64,7 +75,7 @@
     <section class="promo">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 offset-md-1">
+          <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
             <h1 class="promo_header">UBER PARTNERS COMPANY!</h1>
             <h2 class="promo_subheader">WE INVITE DRIVERS! IN YOUR OWN CAR!</h2>
             <div class="promo_descr">
@@ -327,7 +338,7 @@
       </div>
     </section>
 
-    <section class="require">
+    <section class="require" id="require">
       <div class="container">
         <div class="label">possibilities</div>
         <div class="title">conditions and requirements</div>
@@ -459,5 +470,6 @@
       src="https://kit.fontawesome.com/a5bf25fe83.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
